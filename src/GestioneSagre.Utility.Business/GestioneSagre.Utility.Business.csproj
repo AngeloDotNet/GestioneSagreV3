@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Scrutor" Version="4.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\GestioneSagre.Tools.MailKit\GestioneSagre.Tools.MailKit.csproj" />
+        <ProjectReference Include="..\GestioneSagre.Tools.RabbitMQ\GestioneSagre.Tools.RabbitMQ.csproj" />
+        <ProjectReference Include="..\GestioneSagre.Utility.Core\GestioneSagre.Utility.Core.csproj" />
+        <ProjectReference Include="..\GestioneSagre.Utility.Domain\GestioneSagre.Utility.Domain.csproj" />
+        <ProjectReference Include="..\GestioneSagre.Utility.QueryStack\GestioneSagre.Utility.QueryStack.csproj" />
+    </ItemGroup>
+
+</Project>
