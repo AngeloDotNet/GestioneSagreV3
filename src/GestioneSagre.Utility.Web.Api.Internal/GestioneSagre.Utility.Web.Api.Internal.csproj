@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <UserSecretsId>GestioneSagre.Utility.Web.Api.Internal</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\GestioneSagre.Tools.MailKit\GestioneSagre.Tools.MailKit.csproj" />
+        <ProjectReference Include="..\GestioneSagre.Utility.Business\GestioneSagre.Utility.Business.csproj" />
+        <ProjectReference Include="..\GestioneSagre.Utility.Core\GestioneSagre.Utility.Core.csproj" />
+        <ProjectReference Include="..\GestioneSagre.Utility.QueryStack\GestioneSagre.Utility.QueryStack.csproj" />
+    </ItemGroup>
+
+</Project>
