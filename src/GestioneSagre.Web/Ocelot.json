@@ -1,0 +1,41 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/api/home/",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "192.168.1.140",
+                    "Port": 5001
+                }
+            ],
+            "UpstreamPathTemplate": "/helloworld/",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/email/{Id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "192.168.1.140",
+                    "Port": 7169
+                }
+            ],
+            "UpstreamPathTemplate": "/email/{Id}",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/email/",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "192.168.1.140",
+                    "Port": 7169
+                }
+            ],
+            "UpstreamPathTemplate": "/email/",
+            "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+        }
+    ],
+    "GlobalConfiguration": {}
+}
